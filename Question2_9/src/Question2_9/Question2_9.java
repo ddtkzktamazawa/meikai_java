@@ -13,9 +13,9 @@ Random rand = new Random();
 		
 		System.out.println(lucky2);
 		
-		double lucky3 = rand.nextDouble(20);
+		double lucky3 = rand.nextDouble(2);
 		
-		System.out.println(lucky3-10);
+		System.out.println(lucky3-1);
 
 	}
 
