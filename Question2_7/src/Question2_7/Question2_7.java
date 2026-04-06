@@ -10,7 +10,7 @@ public class Question2_7 {
 		System.out.println(lucky1+1);
 		System.out.println(lucky1-9);
 		
-		int lucky2 = rand.nextInt(89);
+		int lucky2 = rand.nextInt(90);
 		
 		System.out.println(lucky2+10);
 		
