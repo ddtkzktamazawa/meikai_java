@@ -18,7 +18,7 @@ public class Question4_4 {
 	public static void main(String[] args) {
 		//キーボードから読み込みを行う
 		Scanner standardInput = new Scanner(System.in);
-		//"カウントダウンします。と表示して改行する"
+		//"カウントダウンします。と表示して改行する
 		System.out.println("カウントダウンします。");
 		//入力した数
 		int timeleft;
