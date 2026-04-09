@@ -7,14 +7,14 @@ import java.util.Scanner;
  * 作成日  :2026.4.9
  */
 public class Question4_11 {
-	 /**
-     * 関数名           :main
-     * メソッドの説明   :正の整数値を0までカウントダウン
-     * パラメータの説明 :なし
-     * 返り値           :なし
-     * 作成者           :玉澤一輝
-     * 作成日           :2026.4.9
-     */
+	/**
+	 * 関数名           :main
+	 * メソッドの説明   :正の整数値を0までカウントダウン
+	 * パラメータの説明 :なし
+	 * 返り値           :なし
+	 * 作成者           :玉澤一輝
+	 * 作成日           :2026.4.9
+	 */
 	public static void main(String[] args) {
 		//キーボードから読み込みを行う
 		Scanner standardInput = new Scanner(System.in);
@@ -34,7 +34,7 @@ public class Question4_11 {
 		for(int incrementValue = 0; incrementValue <= countDown; countDown--)
 			//"countDown"を表示して改行する
 			System.out.println(countDown);
-		
+
 	}
 
 }
