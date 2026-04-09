@@ -18,8 +18,8 @@ public class Question4_1 {
 	public static void main(String[] args) {
 		//キーボードからの読み込みを行う
 		Scanner standardInput = new Scanner(System.in);
-		//もう一度？
-		int retry;
+		//変数retryNumber
+		int retryNumber;
 		//実行する
 		do{
 			//整数値の入力を促す
@@ -40,10 +40,10 @@ public class Question4_1 {
 			System.out.println("その値は0です。");
 		//もう一度行うか促す
 		System.out.print("もう一度？ 1…Yes/0…No：");
-		//retryに数字を読み込ませる
-		retry = standardInput.nextInt();
-		//retryが1の場合、do文を再実行する
-		}while(retry == 1);
+		//retryNumberに数字を読み込ませる
+		retryNumber = standardInput.nextInt();
+		//retryNumberが1の場合、do文を再実行する
+		}while(retryNumber == 1);
 
 	}
 
