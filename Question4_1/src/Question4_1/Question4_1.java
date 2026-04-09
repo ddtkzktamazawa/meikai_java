@@ -19,7 +19,7 @@ public class Question4_1 {
 		//キーボードからの読み込みを行う
 		Scanner standardInput = new Scanner(System.in);
 		//変数retryNumber
-		int retryNumber;
+		int retryNumber = 0;
 		//実行する
 		do{
 			//整数値の入力を促す
