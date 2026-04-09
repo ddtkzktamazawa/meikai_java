@@ -18,17 +18,17 @@ public class Question4_2 {
      */
 	public static void main(String[] args) {
 		//乱数ジェネレータの生成
-		Random rand = new Random();
+		Random guessNumber = new Random();
 		//キーボードからの読み込みを行う
 		Scanner standardInput = new Scanner(System.in);
 		//当てる数：10～99の乱数として生成
-		int randomNumber = rand.nextInt(90)+10;
+		int randomNumber = guessNumber.nextInt(90)+10;
 		//"数当てゲーム開始"と表示して改行する
 		System.out.println("数当てゲーム開始");
 		//"10から99までの数を当ててください。"と表示して改行する
 		System.out.println("10から99までの数を当ててください。");
-		//入力した数
-		int choiceNumber;
+		//choiceNumberの初期値を0に設定
+		int choiceNumber = 0;
 		//実行する
 		do {
 			//"いくつかな："と表示して改行する
