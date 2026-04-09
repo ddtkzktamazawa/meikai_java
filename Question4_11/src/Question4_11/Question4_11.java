@@ -20,8 +20,8 @@ public class Question4_11 {
 		Scanner standardInput = new Scanner(System.in);
 		//"カウントダウンします。と表示して改行する
 		System.out.println("カウントダウンします。");
-		//変数choiceNumber
-		int countDown;
+		//変数countDownの初期化
+		int countDown = 0;
 		//実行する
 		do {
 			//"正の整数値"と表示する
