@@ -20,17 +20,17 @@ public class Question4_5 {
 		Scanner standardInput = new Scanner(System.in);
 		//"カウントダウンします。と表示して改行する
 		System.out.println("カウントダウンします。");
-		//入力した数
-		int timeLeft;
+		//変数timeLeftの初期化
+		int timeLeft = 0;
 		//実行する
 		do {
 			//"正の整数値"と表示する
 			System.out.print("正の整数値：");
-			//rimeLeftに数w読み込む
+			//timeLeftに数w読み込む
 			timeLeft = standardInput.nextInt();
 			//timeLeftが0以下ならばdo文を再実行する
 		}while(timeLeft <= 0);
-		//timeleftが0以上であれば
+		//timeLeftが0以上であれば
 		while(timeLeft >= 0)
 			//timeLeftの値を表示してデクリメント
 			System.out.println(--timeLeft);
