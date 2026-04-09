@@ -1,7 +1,7 @@
 package Question4_9;
 import java.util.Scanner;
 /*
- * クラス名:Question4_8
+ * クラス名:Question4_9
  * 概要    :正の整数値を読み込んで1からその値までの積を求める
  * 作成者  :玉澤一輝
  * 作成日  :2026.4.9
