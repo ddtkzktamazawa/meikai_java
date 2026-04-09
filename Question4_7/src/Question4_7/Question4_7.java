@@ -20,21 +20,21 @@ public class Question4_7 {
 		Scanner standardInput = new Scanner(System.in);
 		//"何個表示しますか"と表示する
 		System.out.print("何個表示しますか：");
-		//numberFirstに入力した数を読み込み
-		int numberFirst = standardInput.nextInt();
+		//inputNumberに入力した数を読み込み
+		int inputNumber = standardInput.nextInt();
 		//incrementValueに0を代入する
 		int incrementValue = 0;
-		//numberSecondにnumberFirst/2を代入する(*と+を1つのまとまりとして見る)
-		int numberSecond = numberFirst / 2;
-		//もしnumberFirstを2で割った剰余が1の場合
-		if(numberFirst % 2 == 1) {
+		//loopCountにinputNumber/2を代入する(*と+を1つのまとまりとして見る)
+		int loopCount = inputNumber / 2;
+		//もしinputNumberを2で割った剰余が1の場合
+		if(inputNumber % 2 == 1) {
 			//"*"を表示する
 			System.out.print('*');
 		}
-		//incrementValueがnumberSecond未満であれば
-		while(incrementValue < numberSecond) {
-			//もしmunberFirstを2で割った剰余が0の場合
-			if(numberFirst % 2 == 0) {
+		//incrementValueがloopCount未満であれば
+		while(incrementValue < loopCount) {
+			//もしinputNumberを2で割った剰余が0の場合
+			if(inputNumber % 2 == 0) {
 				//"*+"を表示する
 				System.out.print("*+");
 				//その他の場合
@@ -45,9 +45,7 @@ public class Question4_7 {
 			}
 			incrementValue++;
 		}
-		//""を表示する
-		System.out.print("");
-
+	
 	}
 
 }
