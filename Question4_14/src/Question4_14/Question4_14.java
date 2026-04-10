@@ -16,6 +16,7 @@ public class Question4_14 {
 	 * 作成日           :2026.4.10
 	 */
 	public static void main(String[] args) {
+		//キーボードから読み込みを行う
 		Scanner standardInput = new Scanner(System.in);
 		//"1からnまでの和を求めます。"と表示して改行する
 		System.out.println("1からnまでの和を求めます。");
