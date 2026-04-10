@@ -19,7 +19,7 @@ public class Question4_9 {
 		//キーボードから読み込みを行う
 		Scanner standardInput = new Scanner(System.in);
 		//変数choiceNumber
-		int choiceNumber;
+		int choiceNumber = 0;
 		//実行する
 		do {
 			//"nの値："と表示する
