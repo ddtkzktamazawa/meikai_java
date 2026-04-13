@@ -1,7 +1,7 @@
 package Question4_15;
 import java.util.Scanner;
 /*
- * クラス名:Question4_14
+ * クラス名:Question4_15
  * 概要    :入力した身長の範囲とその標準体重の対応表を表示する
  * 作成者  :玉澤一輝
  * 作成日  :2026.4.10
