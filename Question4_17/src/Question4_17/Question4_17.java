@@ -27,7 +27,7 @@ public class Question4_17 {
 			//inputNumberに数を読み込む
 			inputNumber = standardInput.nextInt();
 			//入力した数が0以下ならばdo文を再実行する
-		}while(inputNumber < 0);
+		}while(inputNumber <= 0);
 		//変数divisorTimesの初期化
 		int divisorTimes = 0;
 		//変数iを1から始めて1つずつ増やしながら入力した数の回数ループ本体を繰り返す
