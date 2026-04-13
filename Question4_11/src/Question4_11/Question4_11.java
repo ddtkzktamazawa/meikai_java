@@ -20,21 +20,12 @@ public class Question4_11 {
 		Scanner standardInput = new Scanner(System.in);
 		//"カウントダウンします。と表示して改行する
 		System.out.println("カウントダウンします。");
-		//変数countDownの初期化
-		int countDown = 0;
-		//実行する
-		do {
-			//"正の整数値"と表示する
-			System.out.print("正の整数値：");
-			//countDownに数を読み込む
-			countDown = standardInput.nextInt();
-			//countDownが0以下ならばdo文を再実行する
-		}while(countDown <= 0);
+		//"正の整数値"と表示する
+		System.out.print("正の整数値：");
 		//変数incrementValueに0を代入してcountDownを1つずつ減らしながらcountDown回繰り返す
-		for(int incrementValue = 0; incrementValue <= countDown; countDown--)
+		for(int countDown = standardInput.nextInt(); countDown >= 0; countDown--)
 			//"countDown"を表示して改行する
 			System.out.println(countDown);
-
 	}
 
 }
