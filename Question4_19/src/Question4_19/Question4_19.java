@@ -58,7 +58,5 @@ public class Question4_19 {
 			oneMore = standardInput.nextInt();
 			//oneMoreが1ならばdo文を再実行する
 		}while(oneMore == 1);
-
 	}
-
 }

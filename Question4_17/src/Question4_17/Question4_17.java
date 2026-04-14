@@ -41,7 +41,5 @@ public class Question4_17 {
 			}}
 		//"約数はdivisorTimes+個です。"と表示して改行する
 		System.out.println("約数は"+divisorTimes+"個です。");
-
 	}
-
 }

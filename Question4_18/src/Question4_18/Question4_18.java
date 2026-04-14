@@ -34,5 +34,4 @@ public class Question4_18 {
 			System.out.println(i+"の2乗は"+i*i);
 		}
 	}
-
 }

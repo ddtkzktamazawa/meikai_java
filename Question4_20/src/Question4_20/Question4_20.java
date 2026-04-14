@@ -31,12 +31,11 @@ public class Question4_20 {
 		//変数iを1から始めて1つずつ増やしながら入力した数の回数ループ本体を繰り返す
 		for(int i = 1; i <= inputNumber; i++) {
 			//変数jを1から始めて1つずつ増やしながら入力した数の回数ループ本体を繰り返す
-			for(int j = 1; j <= inputNumber; j++)
+			for(int j = 1; j <= inputNumber; j++) {
 				//"*"と表示する
 				System.out.print('*');
 			//改行する
-			System.out.println();
+			}System.out.println();
 		}
 	}
-
 }
