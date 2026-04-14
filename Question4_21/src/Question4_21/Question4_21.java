@@ -39,8 +39,6 @@ public class Question4_21 {
 		Scanner standardInput = new Scanner(System.in);
 		//変数stageNumberの初期化
 		int stageNumber = 0;
-		//変数blankSpaceの初期化
-		int blankSpace = 0;
 		//実行する
 		do {
 			//"整数値："と表示する
@@ -97,5 +95,4 @@ public class Question4_21 {
 			System.out.println();
 		}
 		}*/
-
 	}}
