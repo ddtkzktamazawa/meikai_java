@@ -31,7 +31,7 @@ public class Question4_11 {
 		}while(countDown <= 0);
 		//変数pickNumberにcountDownを代入してpickNumberを1つずつ減らしながらpickNumber回繰り返す
 		for(int pickNumber = countDown; pickNumber >= 0; pickNumber--)
-			//"countDown"を表示して改行する
+			//"pickNumber"を表示して改行する
 			System.out.println(pickNumber);
 	}
 
