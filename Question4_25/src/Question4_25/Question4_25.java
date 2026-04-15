@@ -1,11 +1,24 @@
 package Question4_25;
-
+/*
+ * クラス名:Question4_25
+ * 概要    :読み込んだ整数を加算して合計と平均値を求める
+ * 作成者  :玉澤一輝
+ * 作成日  :2026.4.15
+ */
+import java.util.Scanner;
 public class Question4_25 {
-
+	/**
+	 * 関数名           :main
+	 * メソッドの説明   :読み込んだ整数を加算して合計と平均値を求める
+	 * パラメータの説明 :なし
+	 * 返り値           :なし
+	 * 作成者           :玉澤一輝
+	 * 作成日           :2026.4.15
+	 */
 	public static void main(String[] args) {
-		/*List4-17の書き換え
 		//キーボードから読み込みを行う
 		Scanner standardInput = new Scanner(System.in);
+		/*List4-17の書き換え
 		//"整数を加算します。"と表示して改行する
 		System.out.println("整数を加算します。");
 		//"何個加算しますか："と表示する
@@ -35,8 +48,6 @@ public class Question4_25 {
 		System.out.println("平均値は"+averageValue+"です。");
 		 */
 		/*List4-18の書き換え
-		//キーボードから読み込みを行う
-		Scanner standardInput = new Scanner(System.in);
 		//"整数を加算します。"と表示して改行する
 		System.out.println("整数を加算します。");
 		//"何個加算しますか："と表示する
