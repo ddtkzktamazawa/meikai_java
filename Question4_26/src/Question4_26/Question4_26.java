@@ -1,7 +1,20 @@
 package Question4_26;
+/*
+ * クラス名:Question4_26
+ * 概要    :読み込んだ整数を加算（負の値は加算しない）して合計と平均値を求める
+ * 作成者  :玉澤一輝
+ * 作成日  :2026.4.15
+ */
 import java.util.Scanner;
 public class Question4_26 {
-
+	/**
+	 * 関数名           :main
+	 * メソッドの説明   :読み込んだ整数を加算（負の値は加算しない）して合計と平均値を求める
+	 * パラメータの説明 :なし
+	 * 返り値           :なし
+	 * 作成者           :玉澤一輝
+	 * 作成日           :2026.4.15
+	 */
 	public static void main(String[] args) {
 		//キーボードから読み込みを行う
 		Scanner standardInput = new Scanner(System.in);
