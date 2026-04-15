@@ -34,7 +34,7 @@ public class Question4_25 {
 		//"平均はaverageValueです。"と表示して改行する
 		System.out.println("平均値は"+averageValue+"です。");
 		 */
-		/*
+		/*List4-18の書き換え
 		//キーボードから読み込みを行う
 		Scanner standardInput = new Scanner(System.in);
 		//"整数を加算します。"と表示して改行する
