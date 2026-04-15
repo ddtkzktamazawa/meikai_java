@@ -31,7 +31,7 @@ public class Question4_22 {
 		//変数iを1から始めて1つずつ増やしながら入力した数の回数ループ本体を繰り返す
 		for(int i = 1; i <= stageNumber; i++) {
 			/*変数blankSpaceを1から始めて変数blankSpaceを1ずつ増やしていき
-			 * inputNumber回繰り返す
+			 * （stageNumber-i）回繰り返す
 			 */
 			for(int blankSpace = 1; blankSpace <= stageNumber -i; blankSpace++) {
 				//" "と表示する
