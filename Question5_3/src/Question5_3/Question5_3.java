@@ -1,6 +1,6 @@
 package Question5_3;
 /*
- * クラス名:Question5_2
+ * クラス名:Question5_3
  * 概要    :論理型の変数にtrue、falseを代入してその値を表示する
  * 作成者  :玉澤一輝
  * 作成日  :2026.4.15
