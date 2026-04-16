@@ -28,25 +28,26 @@ public class Question4_24 {
 			inputNumber = standardInput.nextInt();
 			//入力した数が0以下ならばdo文を再実行する
 		}while(inputNumber <= 0);
-		//変数notPrimeの初期化
+		//変数notPrimeの初期化（素数である場合は0をとる）
 		int notPrime = 0;
 		//変数iを2から始めて1つずつ増やしながら入力した数までループ本体を繰り返す
 		for(int i = 2; i < inputNumber; i++) {
 			//もし入力した数をiで割った時の余剰が0の場合
 			if(inputNumber % i == 0) {
-				//変数notPrimeに1を代入する
+				//変数notPrimeに1を代入する（素数でない場合は1をとる）
 				notPrime = 1;
 				//for文から抜ける
 				break;
 			}
 		}
 		//もしnotPrimeが1の場合または入力した数が1の場合
-		if(notPrime == 1 || inputNumber == 1)
+		if(notPrime == 1 || inputNumber == 1) {
 			//"素数ではありません。"と表示する
 			System.out.print("素数ではありません。");
 		//その他の場合
-		else
+		}else {
 			//"素数です。"と表示する
 			System.out.print("素数です。");
+		}
 	}
 }

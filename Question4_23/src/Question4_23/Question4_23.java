@@ -30,8 +30,8 @@ public class Question4_23 {
 		}while(stageNumber <= 0);
 		//変数iを1から始めて1つずつ増やしながら入力した数の回数ループ本体を繰り返す
 		for(int i = 1; i <= stageNumber; i++) {
-			/*変数blankSpaceを1から始めて変数blankSpaceを1ずつ増やしていき
-			 * inputNumber回繰り返す
+			/*半角スペースを1から始めて半角スペースを1ずつ増やしていき
+			 * （ピラミッドの段数-i）回繰り返す
 			 */
 			for(int blankSpace = 1; blankSpace <= stageNumber -i; blankSpace++) {
 				//" "と表示する
@@ -39,7 +39,8 @@ public class Question4_23 {
 				/*変数jを1から始めて変数jを1ずつ増やしていき
 				変数jが段数に2をかけて-1した値より大きくなるまで繰り返す
 				 */
-			}for(int j = 1; j <= 2 * i - 1; j++) {
+			}
+			for(int j = 1; j <= 2 * i - 1; j++) {
 				//"（i/10）の余剰"を表示する
 				System.out.print(i % 10);
 			}
