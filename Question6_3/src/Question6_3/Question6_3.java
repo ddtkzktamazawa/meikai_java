@@ -1,7 +1,19 @@
 package Question6_3;
-
+/*
+ * クラス名:Question6_3
+ * 概要    :int型で要素数が5の配列を作り、先頭から順に1.1から5.5を代入して表示する
+ * 作成者  :玉澤一輝
+ * 作成日  :2026.4.16
+ */
 public class Question6_3 {
-
+	/**
+	 * 関数名           :main
+	 * メソッドの説明   :int型で要素数が5の配列を作り、先頭から順に1.1から5.5を代入して表示する
+	 * パラメータの説明 :なし
+	 * 返り値           :なし
+	 * 作成者           :玉澤一輝
+	 * 作成日           :2026.4.16
+	 */
 	public static void main(String[] args) {
 		//int型を構成要素とする配列要素数の作成
 		double [] someElement = new double[5];
