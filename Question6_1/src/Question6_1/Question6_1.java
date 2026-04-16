@@ -6,6 +6,14 @@ package Question6_1;
  * 作成日  :2026.4.16
  */
 public class Question6_1 {
+	/**
+	 * 関数名           :main
+	 * メソッドの説明   :double型で要素数が5の配列を作り全要素の値を表示する
+	 * パラメータの説明 :なし
+	 * 返り値           :なし
+	 * 作成者           :玉澤一輝
+	 * 作成日           :2026.4.16
+	 */
 	public static void main(String[] args) {
 		//double型を構成要素とする配列要素数を作成する
 		double[]someElement = new double[5];
