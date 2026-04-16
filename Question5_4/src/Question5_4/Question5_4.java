@@ -31,8 +31,8 @@ public class Question5_4 {
 		//thirdValueに数を読み込む
 		int thirdValue = standardInput.nextInt();
 		//sumValueに1つ目の入力値と2つ目の入力値3つ目の入力値を足した値を代入する
-		int sumValue = firstValue+secondValue+thirdValue;
+		int sumValue = firstValue + secondValue + thirdValue;
 		//"合計は+sumValue+平均はsumValue/3.0"を表示して改行する
-		System.out.println("合計は"+sumValue+"平均は"+sumValue / 3.0);
+		System.out.println("合計は" + sumValue + "平均は" + sumValue / 3.0);
 	}
 }
