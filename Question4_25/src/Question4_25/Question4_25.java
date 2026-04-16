@@ -18,7 +18,7 @@ public class Question4_25 {
 	public static void main(String[] args) {
 		//キーボードから読み込みを行う
 		Scanner standardInput = new Scanner(System.in);
-		/*List4-17の書き換え
+		//List4-17の書き換え
 		//"整数を加算します。"と表示して改行する
 		System.out.println("整数を加算します。");
 		//"何個加算しますか："と表示する
@@ -36,7 +36,8 @@ public class Question4_25 {
 			//plusNumberに数を読み込む
 			int plusNumber = standardInput.nextInt();
 			//もし加算をする変数が0の場合、for文から抜ける
-			if(plusNumber == 0) {break;
+			if(plusNumber == 0) {
+				break;
 			}
 			//合計値を求める変数に加算をする変数の値を加算する
 			sumValue += plusNumber;
@@ -47,18 +48,18 @@ public class Question4_25 {
 		System.out.println("合計は"+sumValue+"です。");
 		//"平均はaverageValueです。"と表示して改行する
 		System.out.println("平均値は"+averageValue+"です。");
-		 */
-		/*List4-18の書き換え
+		//
+		//List4-18の書き換え
 		//"整数を加算します。"と表示して改行する
 		System.out.println("整数を加算します。");
 		//"何個加算しますか："と表示する
 		System.out.print("何個加算しますか：");
 		//inputNumberに数を読み込む
-		int inputNumber = standardInput.nextInt();
+		inputNumber = standardInput.nextInt();
 		//合計値を求める変数に0を代入
-		int sumValue = 0;
+		sumValue = 0;
 		//合計値を求める変数に0を代入
-		int averageValue = 0;
+		averageValue = 0;
 		//変数iを1から始めて1つずつ増やしながら入力した数の回数ループ本体を繰り返す
 		for(int i = 1; i <= inputNumber; i++) {
 			//"整数："と表示する
@@ -83,6 +84,6 @@ public class Question4_25 {
 		System.out.println("合計は"+sumValue+"です。");
 		//"平均はaverageValueです。"と表示して改行する
 		System.out.println("平均値は"+averageValue+"です。");
-		 */
+
 	}
 }
