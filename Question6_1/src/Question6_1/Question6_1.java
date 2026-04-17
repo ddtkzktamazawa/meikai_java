@@ -15,7 +15,7 @@ public class Question6_1 {
 	 * 作成日           :2026.4.16
 	 */
 	public static void main(String[] args) {
-		//double型を構成要素とする配列要素数を作成する
+		//double型を構成要素とする配列を作成する
 		double[]someElement = new double[5];
 		//someElement[0]に1.5を代入する
 		someElement[0] = 1.5;
@@ -28,10 +28,15 @@ public class Question6_1 {
 		//someElement[4]に0.5;を代入する
 		someElement[4] = 0.5;
 		//全要素の値を表示する
+		//"someElement[0] = 1.5"を表示して改行する
 		System.out.println("someElement[" + 0 + "] = " + someElement[0]);
+		//"someElement[1] = 3.5"を表示して改行する
 		System.out.println("someElement[" + 1 + "] = " + someElement[1]);
+		//"someElement[2] = 1.0"を表示して改行する
 		System.out.println("someElement[" + 2 + "] = " + someElement[2]);
+		//"someElement[3] = （someElement[1]を2倍した値）"を表示して改行する
 		System.out.println("someElement[" + 3 + "] = " + someElement[3]);
+		//"someElement[4] = 0.5"を表示して改行する
 		System.out.println("someElement[" + 4 + "] = " + someElement[4]);
 	}
 }
