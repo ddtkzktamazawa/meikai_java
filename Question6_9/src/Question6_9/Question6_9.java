@@ -8,7 +8,7 @@ import java.util.Random;
  */
 import java.util.Scanner;
 public class Question6_9 {
-/**
+	/**
 	 * 関数名           :main
 	 * メソッドの説明   :要素数を読み込んでint型の配列の全要素を1～10の乱数で表示する
 	 * パラメータの説明 :なし
@@ -29,9 +29,9 @@ public class Question6_9 {
 		int []someElement = new int[elementValue];
 		////変数iを0から始め1ずつ増やし、elementValueの値より大きくなるまで繰り返す
 		for(int j = 0; j < elementValue; j++)
-			//変数someElement[i]に入力した数を代入する
+			//変数someElement[i]に乱数（1～10）を代入する
 			someElement[j] = allNumber.nextInt(10) + 1;
-		 //改行後に"{"を表示する
+		//改行後に"{"を表示する
 		System.out.print("{");
 		//変数jを0から始め1ずつ減らし入力した値よりも小さくなるまで繰り返す
 		for(int j = 0; j < elementValue; j++) 
@@ -39,6 +39,7 @@ public class Question6_9 {
 			if(j == 0) {
 				//"someElement[j]"を表示する
 				System.out.print(someElement[j]);
+				//その他の場合
 			}else {
 				//", someElement[j]+ "を表示する
 				System.out.print(", "+ someElement[j]);
