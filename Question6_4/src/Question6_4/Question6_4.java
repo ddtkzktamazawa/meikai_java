@@ -26,16 +26,16 @@ public class Question6_4 {
 		//変数inputNumberに入力した数を読み込む
 		int inputNumber = standardInput.nextInt();
 		//int型を構成要素とする配列を作成する
-		int[]someElement = new int[inputNumber];
+		int[] someElement = new int[inputNumber];
 		//変数iを0から始め1ずつ増やし、入力した値より大きくなるまで繰り返す
-		for(int i = 0; i < inputNumber; i++) {
+		for(int i = 0; i < someElement.length; i++) {
 			//変数someElement[i]に0～9までのランダムな値に1を足した値を代入する
 			someElement[i] = 1 + randomNumber.nextInt(10);
 		}
 		//変数iを0から始め1ずつ増やし10よりも大きくなるまで繰り返す
 		for(int i = 0; i < 10; i++) {
 			//変数jを0から始め1ずつ増やし、入力した値より大きくなるまで繰り返す
-			for(int j = 0; j < inputNumber; j++) {
+			for(int j = 0; j < someElement.length; j++) {
 				//10-変数iがランダムな値に1を足した数よりも大きい場合
 				if(10 - i > someElement[j]) {
 					//" "を表示する
@@ -53,7 +53,7 @@ public class Question6_4 {
 		//()の文字を表示して改行する
 		System.out.println("--------------------");
 		//変数iを0から始め1ずつ増やし入力した値よりも大きくなるまで繰り返す
-		for(int i = 0; i < inputNumber; i++) {
+		for(int i = 0; i < someElement.length; i++) {
 			//変数iを10で割ったときの余剰を表示する
 			System.out.print(i % 10);
 		}
