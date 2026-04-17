@@ -26,7 +26,7 @@ public class Question6_5 {
 		int[] someElement = new int[inputNumber];
 		//変数iを0から始め1ずつ増やし、より大きくなるまで繰り返す
 		for(int i = 0; i < inputNumber; i++) {
-
+			//"someElement+[i]="と表示する
 			System.out.print("someElement"+"[" + i + "]" +"=");
 			//変数someElement[i]に入力した数を代入する
 			someElement[i] = standardInput.nextInt();
