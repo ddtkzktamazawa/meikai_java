@@ -33,7 +33,7 @@ public class Question6_10 {
 			someElement[j] = allNumber.nextInt(10) + 1;
 		//改行後に"{"を表示する
 		System.out.print("{");
-		//変数jを0から始め1ずつ減らし入力した値よりも小さくなるまで繰り返す
+		//変数jを0から始め1ずつ増やし入力した値よりも小さくなるまで繰り返す
 		for(int j = 0; j < elementValue; j++) 
 			//変数jが0の場合
 			if(j == 0) {
