@@ -15,7 +15,7 @@ public class Question6_2 {
 	 * 作成日           :2026.4.16
 	 */
 	public static void main(String[] args) {
-		//int型を構成要素とする配列要素数の作成
+		//int型を構成要素とする配列を作成する
 		int [] someElement = new int[5];
 		//変数jの初期化
 		int j = 0;
