@@ -24,17 +24,17 @@ public class Question6_5 {
 		int inputNumber = standardInput.nextInt();
 		//int型を構成要素とする配列を作成する
 		int[] someElement = new int[inputNumber];
-		//変数iを0から始め1ずつ増やし、より大きくなるまで繰り返す
+		//変数iを0から始め1ずつ増やし、入力した値より大きくなるまで繰り返す
 		for(int i = 0; i < inputNumber; i++) {
-			//"someElement+[i]="と表示する
-			System.out.print("someElement"+"[" + i + "]" +"=");
+			//"someElement[i]="と表示する
+			System.out.print("someElement" + "[" + i + "]" + "=");
 			//変数someElement[i]に入力した数を代入する
 			someElement[i] = standardInput.nextInt();
 		}
 		//()の文字を表示する
 		System.out.print("a = {");
-		//変数iを1から始め1ずつ増やし入力した値よりも大きくなるまで繰り返す
-		for(int i = 1; i <= inputNumber; i++) {
+		//変数iを0から始め1ずつ増やし入力した値より大きくなるまで繰り返す
+		for(int i = 0; i < inputNumber; i++) {
 			//変数iが1の場合
 			if(i == 1) {
 				//()の文字を表示する
