@@ -22,7 +22,7 @@ public class Question6_5 {
 		System.out.print("要素数：");
 		//変数inputNumberに入力した数を読み込む
 		int inputNumber = standardInput.nextInt();
-		//int型を構成要素とする配列要素数の作成
+		//int型を構成要素とする配列を作成する
 		int[] someElement = new int[inputNumber];
 		//変数iを0から始め1ずつ増やし、より大きくなるまで繰り返す
 		for(int i = 0; i < inputNumber; i++) {
