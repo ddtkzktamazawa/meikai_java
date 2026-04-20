@@ -64,12 +64,19 @@ public class Question6_12 {
 			}
 		//"}"を表示して改行する
 		System.out.println("}");
+		//変数iを0から始めて1ずつ増やし入力した値の半分よりも大きくなるまで繰り返す
 		for(int i = 0; i < elementValue / 2; i++) {
+			//変数tにsomeElement[i]を代入する
 			int t = someElement[i];
+			//変数qに要素数の中からランダムなものを代入する
 			int q = allNumber.nextInt(elementValue);
+			//変数pに要素数の中からランダムなものを代入する
 			int p = allNumber.nextInt(elementValue);
+			//変数tにsomeElement[q]を代入する
 			t = someElement[q];
+			//someElement[q]にsomeElement[p]を代入する
 			someElement[q] = someElement[p];
+			//someElement[p]にtを代入する
 			someElement[p] = t;
 		}
 		//"並びをシャッフルしました。"と表示して改行する
