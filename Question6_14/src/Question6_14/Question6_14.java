@@ -1,12 +1,12 @@
 package Question6_14;
+import java.util.Random;
+import java.util.Scanner;
 /*
  * クラス名:Question6_14
  * 概要    :月を1～12の数値として表示して、その英語表現を入力する
  * 作成者  :玉澤一輝
  * 作成日  :2026.4.20
  */
-import java.util.Random;
-import java.util.Scanner;
 public class Question6_14 {
 	/**
 	 * 関数名           :main
