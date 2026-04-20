@@ -1,12 +1,12 @@
 package Question6_11;
 import java.util.Random;
+import java.util.Scanner;
 /*
  * クラス名:Question6_10
  * 概要    :要素数を読み込んでint型の配列の全要素を1～10の乱数で表示する（連続で同じ値を出さない）
  * 作成者  :玉澤一輝
  * 作成日  :2026.4.17
  */
-import java.util.Scanner;
 public class Question6_11 {
 	/**
 	 * 関数名           :main
