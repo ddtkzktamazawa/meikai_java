@@ -33,14 +33,12 @@ public class Question6_11 {
 		}while (elementValue <= 0 || elementValue > 10);
 		//int型を構成要素とする配列を作成する
 		int []someElement = new int[elementValue];
-		////変数iを0から始め1ずつ増やし、elementValueの値より大きくなるまで繰り返す
-		for(int j = 0; j < elementValue; j++)
-			//変数someElement[i]に乱数（1～10）を代入する
-			someElement[j] = allNumber.nextInt(10) + 1;
 		//改行後に"{"を表示する
 		System.out.print("{");
-		//変数jを0から始めて1ずつ増やし入力した値よりも大きくなるまで繰り返す
-		for(int j = 0; j < elementValue; j++) 
+		//変数iを0から始め1ずつ増やし、elementValueの値より大きくなるまで繰り返す
+		for(int j = 0; j < elementValue; j++) {
+			//変数someElement[i]に乱数（1～10）を代入する
+			someElement[j] = allNumber.nextInt(10) + 1;
 			//変数jが0の場合
 			if(j == 0) {
 				//"someElement[j]"を表示する
@@ -60,6 +58,7 @@ public class Question6_11 {
 				//", someElement[j]+ "を表示する
 				System.out.print(", "+ someElement[j]);
 			}
+		}
 		//"}"を表示して改行する
 		System.out.println("}");
 	}
