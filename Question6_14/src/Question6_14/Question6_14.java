@@ -51,7 +51,7 @@ public class Question6_14 {
 			if((monthNumber1[answerMonth]).equals(monthNumber2)) {
 				//memoryMonthにanswerMonthを代入する
 				memoryMonth = answerMonth;
-				//"正解です。もう一度？ 1…Yes/0…No1："を表示する
+				//"正解です。もう一度？ 1…Yes/0…No："を表示する
 				System.out.print("正解です。もう一度？ 1…Yes/0…No：");
 				//変数onceAgainに入力した数を読み込む
 				int onceAgain = standardInput.nextInt();
