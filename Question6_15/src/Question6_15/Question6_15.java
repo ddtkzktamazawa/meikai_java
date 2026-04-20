@@ -19,7 +19,7 @@ public class Question6_15 {
 	public static void main(String[] args) {
 		//乱数ジェネレータの生成
 		Random randomNumber = new Random();
-		//キーボードから読み込みを行う
+		//キーボードで入力した値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in);
 		//String型を構成要素とする配列要素数の作成
 		final String[] weekDay = {
