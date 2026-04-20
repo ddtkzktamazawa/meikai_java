@@ -53,6 +53,7 @@ public class Question6_6 {
 				//maxPointにpeoplePoint[i]の値を代入する
 				maxPoint = peoplePoint[i];
 			}
+			//もしpeoplePoint[i]がminPointよりも小さい場合
 			if(peoplePoint[i] < minPoint) {
 				//minPointにpeoplePoint[i]の値を代入する
 				minPoint = peoplePoint[i];
