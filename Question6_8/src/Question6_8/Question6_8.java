@@ -26,10 +26,10 @@ public class Question6_8 {
 		double [] elementNumber = new double[elementValue];
 		//変数iを0から始め1ずつ増やし、入力した値より大きくなるまで繰り返す
 		for(int i = 0; i < elementValue; i++) {
-			//"someElement+[i]="と表示する
-			System.out.print("elementNumber"+"[" + i + "]" +"=");
+			//"elementNumber[i]="と表示する
+			System.out.print("elementNumber" + "[" + i + "]" + " = ");
 			//変数elementNumber[i]に入力した数を代入する
-			elementNumber[i] = standardInput.nextInt();
+			elementNumber[i] = standardInput.nextDouble();
 		}
 		//変数sumValueの初期化
 		double sumValue = 0;
@@ -40,6 +40,6 @@ public class Question6_8 {
 		//"全要素の合計値はsumValueです。"を表示して改行する
 		System.out.println("全要素の合計値は" + sumValue + "です。");
 		//"全要素の平均値は（合計値/要素数）"を表示して改行する
-		System.out.println("全要素の平均値は" + (double) sumValue / elementValue + "です。");
+		System.out.println("全要素の平均値は" + sumValue / elementValue + "です。");
 	}
 }

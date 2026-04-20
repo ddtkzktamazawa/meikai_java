@@ -21,22 +21,24 @@ public class Question6_7 {
 		Random allNumber = new Random();
 		//キーボードから読み込みを行う
 		Scanner standardInput = new Scanner(System.in);
-		//要素数elementValueを12個に設定する
-		final int elementValue = 12;
+		//要素数ELEMENT_VALUEを12個に設定する
+		final int ELEMENT_VALUE = 12;
 		//int型を構成要素とする配列を作成する
-		int []someElement = new int[elementValue];
-		////変数iを0から始め1ずつ増やし、elementValueの値より大きくなるまで繰り返す
-		for(int j = 0; j < elementValue; j++)
+		int []someElement = new int[ELEMENT_VALUE];
+		////変数iを0から始め1ずつ増やし、ELEMENT_VALUEの値より大きくなるまで繰り返す
+		for(int j = 0; j < ELEMENT_VALUE; j++) {
 			//変数someElement[i]に入力した数を代入する
 			someElement[j] = allNumber.nextInt(10);
-		/*"配列someElementの全要素の値"を表示して改行
-		 * 改行後に"{ "を表示する
-		 */
+			/*"配列someElementの全要素の値"を表示して改行
+			 * 改行後に"{ "を表示する
+			 */
+		}
 		System.out.print("配列someElementの全要素の値\n{ ");
 		//変数jを0から始め1ずつ減らし入力した値よりも小さくなるまで繰り返す
-		for(int j = 0; j < elementValue; j++) 
+		for(int j = 0; j < ELEMENT_VALUE; j++) {
 			//"someElement[j]+ "を表示する
 			System.out.print(someElement[j] + " ");
+		}
 		//"}"を表示して改行する
 		System.out.println("}");
 		//"探す数値："を表示する
@@ -45,12 +47,13 @@ public class Question6_7 {
 		int keyNumber = standardInput.nextInt();
 		//変数iの初期化
 		int i = 0;
-		//変数iをelementValue-1から始め1ずつ減らし0まで繰り返す
-		for(i = elementValue - 1; i >= 0; i--) {
+		//変数iをELEMENT_VALUE-1から始め1ずつ減らし0まで繰り返す
+		for(i = ELEMENT_VALUE - 1; i >= 0; i--) {
 			//もしsomeElement[i]がkeyNumberと同じ場合
-			if(someElement[i] == keyNumber)
+			if(someElement[i] == keyNumber){
 				//for文から抜ける
 				break;
+			}
 		}
 		//もしiが0以上の場合
 		if(i >= 0) {

@@ -18,12 +18,17 @@ public class Question6_6 {
 	public static void main(String[] args) {
 		//キーボードから読み込みを行う
 		Scanner standardInput = new Scanner(System.in);
-		//"人数："と表示する
-		System.out.print("人数：");
 		//変数sumValueの初期化
 		int sumValue = 0;
-		//変数peopleNumberに入力した数を読み込む
-		int peopleNumber = standardInput.nextInt();
+		//変数peopleNumberの初期化
+		int peopleNumber = 0;
+		//実行する
+		do {
+			//"人数："と表示する
+			System.out.print("人数：");
+			//変数peopleNumberに入力した数を読み込む
+			peopleNumber = standardInput.nextInt();
+		}while(peopleNumber <= 0);
 		//int型を構成要素とする配列を作成する
 		int[] peoplePoint = new int[peopleNumber];
 		//()の文字を表示して改行する
@@ -39,22 +44,20 @@ public class Question6_6 {
 		}
 		//変数maxPointにpeoplePoint[0]の値を代入する
 		int maxPoint = peoplePoint[0];
+		//変数minPointにpeoplePoint[0]の値を代入する
+		int minPoint = peoplePoint[0];
 		//変数iを1から始め1ずつ増やし入力した値よりも大きくなるまで繰り返す
-		for(int i = 1; i < peoplePoint.length; i++)
+		for(int i = 1; i < peoplePoint.length; i++) {
 			//もしpeoplePoint[i]がmaxPointよりも大きい場合
 			if(peoplePoint[i] > maxPoint) {
 				//maxPointにpeoplePoint[i]の値を代入する
 				maxPoint = peoplePoint[i];
 			}
-		//変数minPointにpeoplePoint[0]の値を代入する
-		int minPoint = peoplePoint[0];
-		//変数iを1から始め1ずつ増やし入力した値よりも大きくなるまで繰り返す
-		for(int i = 1; i < peoplePoint.length; i++)
-			//もしpeoplePoint[i]がminPointよりも小さい場合
 			if(peoplePoint[i] < minPoint) {
 				//minPointにpeoplePoint[i]の値を代入する
 				minPoint = peoplePoint[i];
 			}
+		}
 		//"合計点はsumValue点です。"を表示して改行する
 		System.out.println("合計点は" + sumValue + "点です。");
 		//"平均点は（合計点/人数）点です。"を表示して改行する
