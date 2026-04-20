@@ -35,7 +35,7 @@ public class Question6_12 {
 		}while (elementValue <= 0 || elementValue > 10);
 		//int型を構成要素とする配列を作成する
 		int []someElement = new int[elementValue];
-		////変数iを0から始め1ずつ増やし、elementValueの値より大きくなるまで繰り返す
+		//変数iを0から始め1ずつ増やし、elementValueの値より大きくなるまで繰り返す
 		for(int j = 0; j < elementValue; j++)
 			//変数someElement[i]に乱数（1～10）を代入する
 			someElement[j] = allNumber.nextInt(10) + 1;
