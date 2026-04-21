@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 public class Question7_1 {
 	/**
-	 * 関数名           :main
+	 * 関数名           :signOf
 	 * メソッドの説明   :受け取ったint型引数の値が正なら1、0なら0、負なら-1を返却する
 	 * パラメータの説明 :なし
 	 * 返り値           :なし
