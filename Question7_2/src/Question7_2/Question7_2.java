@@ -1,7 +1,7 @@
 package Question7_2;
 import java.util.Scanner;
 /*
- * クラス名:Question7_1
+ * クラス名:Question7_2
  * 概要    :三つのint型引数の最小値を求める
  * 作成者  :玉澤一輝
  * 作成日  :2026.4.21
