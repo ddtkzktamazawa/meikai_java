@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 public class Question7_2 {
 	/**
-	 * 関数名           :main
+	 * 関数名           :minNumber
 	 * メソッドの説明   :三つのint型引数の最小値を求める
 	 * 					 1未満の整数も比較対象
 	 * パラメータの説明 :なし
@@ -32,6 +32,14 @@ public class Question7_2 {
 		//返却する
 		return minNumber;
 	}
+	/*
+	 * 関数名           :main
+	 * メソッドの説明   :メイン処理
+	 * パラメータの説明 :なし
+	 * 返り値           :なし
+	 * 作成者           :玉澤一輝
+	 * 作成日           :2026.4.21
+	 */
 	public static void main(String[] args) {
 		//キーボードで入力した値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in);

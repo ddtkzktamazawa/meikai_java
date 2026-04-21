@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 public class Question7_4 {
 	/**
-	 * 関数名           :main
+	 * 関数名           :sumUp
 	 * メソッドの説明   :1から入力値までの全整数の和を求める
 	 * 					 1未満の整数が与えられた場合は加算処理を行わず0を返却する
 	 * パラメータの説明 :なし
@@ -27,6 +27,14 @@ public class Question7_4 {
 		//返却する
 		return sumUp;
 	}
+	/*
+	 * 関数名           :main
+	 * メソッドの説明   :メイン処理
+	 * パラメータの説明 :なし
+	 * 返り値           :なし
+	 * 作成者           :玉澤一輝
+	 * 作成日           :2026.4.21
+	 */
 	public static void main(String[] args) {
 		//キーボードで入力した値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in);
