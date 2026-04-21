@@ -22,7 +22,7 @@ public class Question6_14 {
 		//キーボードから読み込みを行う
 		Scanner standardInput = new Scanner(System.in);
 		//String型を構成要素とする配列要素数の作成
-		String[] monthNumber1 = {
+		final String[] MONTH_NUMBER_1 = {
 				//各月の英語名
 				"January","February","March","April","May","June","July",
 				"August","September","October","November","December"
@@ -30,25 +30,22 @@ public class Question6_14 {
 		//"英語の月名を入力してください。なお、先頭は大文字で、2文字以降は小文字とします。"と表示して改行する
 		System.out.println("英語の月名を入力してください。\nなお、先頭は大文字で、2文字以降は小文字とします。");
 		//変数memoryMonthの初期化
-		int memoryMonth = 0;
+		int memoryMonth = -1;
 		//繰り返す
 		while(true) {
 			//変数answerMonthに乱数（0～11）を代入する
-			int answerMonth = randomMonth.nextInt(12);
+			int answerMonth = randomMonth.nextInt(MONTH_NUMBER_1.length);
 			//もしmemoryMonthとanswerMonthが同じ場合
-			if(memoryMonth == answerMonth) {
-				//memoryMonthとanswerMonthが同じとき繰り返す
-				while(memoryMonth == answerMonth) {
-					//変数answerMonthに乱数（0～11）を代入する
-					answerMonth = randomMonth.nextInt(12);
-				}
+			while(memoryMonth == answerMonth) {
+				//変数answerMonthに乱数（0～11）を代入する
+				answerMonth = randomMonth.nextInt(MONTH_NUMBER_1.length);
 			}
 			//"answerMonth+1 月:"と表示する
 			System.out.print(answerMonth + 1 + "月:");
 			//String型を構成要素とする配列要素数の作成
 			String monthNumber2 = standardInput.next();
 			//問題の月と入力した英語のスペルが同じ場合
-			if((monthNumber1[answerMonth]).equals(monthNumber2)) {
+			if((MONTH_NUMBER_1[answerMonth]).equals(monthNumber2)) {
 				//memoryMonthにanswerMonthを代入する
 				memoryMonth = answerMonth;
 				//"正解です。もう一度？ 1…Yes/0…No："を表示する
