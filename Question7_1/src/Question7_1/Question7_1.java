@@ -11,9 +11,9 @@ public class Question7_1 {
 	 * 関数名           :signOf
 	 * メソッドの説明   :sumOfの値が正か負か0かを確かめる
 	 * パラメータの説明 :入力した値
-	 * 返り値           :代入された値
+	 * 返り値           :引数が正だったら1、0だったら0、負だったら-1を返す
 	 * 作成者           :玉澤一輝
-	 * 作成日           :2026.4.21
+	 * 作成日           :2026.4.22
 	 */
 	public static int signOf(int inputNumber) {
 		//変数signOfの初期化
