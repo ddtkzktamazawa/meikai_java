@@ -9,13 +9,13 @@ import java.util.Scanner;
 public class Question7_1 {
 	/**
 	 * 関数名           :signOf
-	 * メソッドの説明   :受け取ったint型引数の値が正なら1、0なら0、負なら-1を返却する
-	 * パラメータの説明 :なし
-	 * 返り値           :なし
+	 * メソッドの説明   :sumOfの値が正か負か0かを確かめる
+	 * パラメータの説明 :入力した値
+	 * 返り値           :代入された値
 	 * 作成者           :玉澤一輝
 	 * 作成日           :2026.4.21
 	 */
-	static int signOf(int inputNumber) {
+	public static int signOf(int inputNumber) {
 		//変数signOfの初期化
 		int signOf = 0;
 		//入力値が正の場合
@@ -36,6 +36,14 @@ public class Question7_1 {
 		//返却する
 		return signOf;
 	}
+	/**
+	 * 関数名           :main
+	 * メソッドの説明   :値の入力とその値に応じたsumOfメソッドの結果を表示する
+	 * パラメータの説明 :なし
+	 * 返り値           :なし
+	 * 作成者           :玉澤一輝
+	 * 作成日           :2026.4.22
+	 */
 	public static void main(String[] args) {
 		//キーボードで入力した値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in); 
