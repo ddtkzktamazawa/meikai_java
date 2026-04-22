@@ -49,7 +49,7 @@ public class Question7_7 {
 	public static void main(String[] args) {
 		//キーボードで入力した値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in);
-		//"左下直角の三角形を表示します"の中の文字を表示して改行する
+		//"左下直角の三角形を表示します"を表示して改行する
 		System.out.println("左下直角の三角形を表示します。");
 		//"段数は："を表示する
 		System.out.print("段数は：");
