@@ -18,6 +18,8 @@ public class Question7_11 {
 	public static void main(String[] args) {
 		//キーボードで入力した値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in);
+
+		final int baseNumber = 2;
 		//"整数x"を表示する
 		System.out.print("整数x：");
 		//変数integerNumberに入力した値を代入する
@@ -31,18 +33,16 @@ public class Question7_11 {
 		//変数iが0から始めて1ずつ増やしていきシフトの回数繰り返す
 		for (int i = 0; i < shiftNumber; i++) {
 			//2を1回ずつかけて2のn乗を計算する
-			powerofTwo *= 2;
+			powerofTwo *= baseNumber;
 		}
-		//"x << n = (integerNumber << shiftNumber)"と表示して改行する
-		System.out.println("x << n  = " + (integerNumber << shiftNumber));
-		//"x * 2^n = (integerNumber * shiftNumber)"と表示して改行する
-		System.out.println("x * 2^n = " + (integerNumber * powerofTwo));
-		//改行する
-		System.out.println();
-		//"x >> n  = "(integerNumber >> shiftNumber)"と表示して改行する
-		System.out.println("x >> n  = " + (integerNumber >> shiftNumber));
-		//"x / 2^n = "(integerNumber / powerofTwo)"と表示して改行する
-		System.out.println("x / 2^n = " + (integerNumber / powerofTwo));
+		//"左シフト：(integerNumber << shiftNumber)"と表示して改行する
+		System.out.println("左シフト：" + (integerNumber << shiftNumber));
+		//"2のべき乗(乗算)：(integerNumber * shiftNumber)"と表示して改行する
+		System.out.println("2のべき乗(乗算)：" + (integerNumber * powerofTwo));
+		//"右シフト：(integerNumber >> shiftNumber)"と表示して改行する
+		System.out.println("右シフト：" + (integerNumber >> shiftNumber));
+		//"2のべき乗(除算)：(integerNumber / powerofTwo)"と表示して改行する
+		System.out.println("2のべき乗(除算)：" + (integerNumber / powerofTwo));
 	}
 
 }
