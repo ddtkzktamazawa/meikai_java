@@ -19,29 +19,29 @@ public class Question6_17 {
 		//キーボードで入力した値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in);
 		//int型を構成要素型とする配列を構成要素型とする配列（2行6列の行列）の宣言
-		final int [][] resultMatrix = new int[2][6];
+		final int [][] RESULT_MATRIX = new int[2][6];
 		//String型を構成要素型とする配列の宣言
 		final String[] SUBJECT_SCORE = {"国語","数学"};
 		//変数iを0から始め1ずつ増やし、2まで繰り返す
-		for(int i = 0; i < resultMatrix.length; i++) {
+		for(int i = 0; i < RESULT_MATRIX.length; i++) {
 			//変数jを0から始め1ずつ増やし、6まで繰り返す
-			for(int j = 0; j < resultMatrix.length; j++) {
-				//"(j+1)人目の点数：（教科）resultMatrix[i][j]"と表示する
-				System.out.print(j + 1 +"人目の点数："+ SUBJECT_SCORE[i] + "resultMatrix["+ i +"]"+"["+ j +"] = " );
+			for(int j = 0; j < RESULT_MATRIX[i].length; j++) {
+				//"(j+1)人目の点数：（教科）RESULT_MATRIX[i][j]"と表示する
+				System.out.print(j + 1 +"人目の点数："+ SUBJECT_SCORE[i] + "RESULT_MATRIX["+ i +"]"+"["+ j +"] = " );
 				//変数firstMatrix[i][j]に入力した数を代入する
-				resultMatrix[i][j] = standardInput.nextInt();
+				RESULT_MATRIX[i][j] = standardInput.nextInt();
 			}
 		}
 		//改行する
 		System.out.println();
 		//変数iを0から始め1ずつ増やし、2まで繰り返す
-		for(int i = 0; i < resultMatrix.length; i++) {
+		for(int i = 0; i < RESULT_MATRIX.length; i++) {
 			//変数totalPointの初期化
 			int totalPoint = 0;
 			//変数jを0から始め1ずつ増やし、6まで繰り返す
-			for(int j = 0; j < resultMatrix.length; j++) {
+			for(int j = 0; j < RESULT_MATRIX[i].length; j++) {
 				//科目ごとの全員の合計を計算
-				totalPoint += resultMatrix[i][j];
+				totalPoint += RESULT_MATRIX[i][j];
 			}
 			//"(SUBJECT_SCORE[i]の平均点はtotalPoint/6 点"と表示して改行する
 			System.out.println(SUBJECT_SCORE[i] + "の平均点は" + (double)totalPoint / 6 + "点");
@@ -49,9 +49,9 @@ public class Question6_17 {
 		//変数iを0から始め1ずつ増やし、1まで繰り返す
 		for(int i = 0; i < 1; i++) {
 			//変数jを0から始め1ずつ増やし、6まで繰り返す
-			for(int j = 0; j < resultMatrix.length; j++) {
-				//"(j+1)人目の平均点はresultMatrix[i][j]+resultMatrix[i+1][j])/2 点"と表示して改行する
-				System.out.println(j + 1 + "人目の平均点は" + (double)(resultMatrix[i][j] + resultMatrix[i + 1][j]) / 2 + "点");
+			for(int j = 0; j < RESULT_MATRIX[i].length; j++) {
+				//"(j+1)人目の平均点はRESULT_MATRIX[i][j]+RESULT_MATRIX[i+1][j])/2 点"と表示して改行する
+				System.out.println(j + 1 + "人目の平均点は" + (double)(RESULT_MATRIX[i][j] + RESULT_MATRIX[i + 1][j]) / 2 + "点");
 			}
 		}
 	}
