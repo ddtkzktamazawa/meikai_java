@@ -82,19 +82,19 @@ public class Question7_13 {
 		printBits(integerNumber);
 		//改行する
 		System.out.println();
-		//"番目を1にした値 ："を表示する
+		//"(positionNumber+1)番目を1にした値 ："を表示する
 		System.out.print(positionNumber +1 +"番目を1にした値 ：");
 		//指定位置を1にセットした結果を表示
 		printBits(set(integerNumber, positionNumber));
 		//改行する
 		System.out.println();
-		//"番目を0にした値 ："を表示する
+		//"(positionNumber+1)番目を0にした値 ："を表示する
 		System.out.print(positionNumber+1 +"番目を0にした値 ：");
 		//指定位置を0にリセットした結果を表示
 		printBits(reset(integerNumber, positionNumber));
 		//改行する
 		System.out.println();
-		//"番目を反転した値："を表示する
+		//"(positionNumber+1)番目を反転した値："を表示する
 		System.out.print(positionNumber+1 +"番目を反転した値：");
 		//指定位置を反転した結果を表示
 		printBits(inverse(integerNumber, positionNumber));
