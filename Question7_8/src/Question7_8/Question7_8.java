@@ -20,7 +20,7 @@ public class Question7_8 {
 	static int random(int firstRandom, int secondRandom) {
 		//ランダムな数を入れる変数を作成
 		Random randomNumber = new Random();
-		//もしランダム数2よりランダム数1の値が大きい場合
+		//もしランダム数1がランダム数2以上の場合
 		if(firstRandom >= secondRandom) {	
 			//ランダム数1を返却する
 			return firstRandom;
