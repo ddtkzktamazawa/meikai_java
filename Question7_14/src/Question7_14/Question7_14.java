@@ -123,7 +123,7 @@ public class Question7_14 {
 		System.out.print("整数x：");
 		//変数integerNumberに入力した値を代入する
 		int integerNumber = standardInput.nextInt();
-		//"整数x"を表示する
+		//"位置pos："を表示する
 		System.out.print("位置pos：");
 		//変数positionNumberに入力した値を代入する
 		int positionNumber = standardInput.nextInt();
