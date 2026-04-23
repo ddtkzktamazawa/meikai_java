@@ -68,11 +68,11 @@ public class Question7_13 {
 	public static void main(String[] args) {
 		//キーボードで入力した値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in);
-		//"整数x"を表示する
+		//"整数x："を表示する
 		System.out.print("整数x：");
 		//変数integerNumberに入力した値を代入する
 		int integerNumber = standardInput.nextInt();
-		//"整数x"を表示する
+		//"位置pos："を表示する
 		System.out.print("位置pos：");
 		//変数positionNumberに入力した値を代入する
 		int positionNumber = standardInput.nextInt();
