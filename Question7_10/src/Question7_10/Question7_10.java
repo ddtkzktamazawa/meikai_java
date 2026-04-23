@@ -8,7 +8,7 @@ import java.util.Scanner;
  * 作成日              :2026.4.22
  */
 public class Question7_10 {
-
+	//キーボードで入力した値を入れる変数を作る
 	private static final Scanner STANDARD_INPUT = new Scanner(System.in);
 	/*
 	 * 関数名           :confirmRetry
@@ -61,6 +61,8 @@ public class Question7_10 {
 				int sumNumber = STANDARD_INPUT.nextInt();
 				//もしsumNumberとfirstNumber + secondNumber + thirdNumberが一致した場合
 				if(sumNumber == firstNumber + secondNumber + thirdNumber) {
+					//"正解です。"と表示して改行する
+					System.out.println("正解です。");
 					//飛び出す
 					break;
 				}
@@ -73,6 +75,8 @@ public class Question7_10 {
 				int sumNumber = STANDARD_INPUT.nextInt();
 				//もしsumNumberとfirstNumber + secondNumber - thirdNumberが一致した場合
 				if(sumNumber == firstNumber + secondNumber - thirdNumber) {
+					//"正解です。"と表示して改行する
+					System.out.println("正解です。");
 					//飛び出す
 					break;
 				}
@@ -85,6 +89,8 @@ public class Question7_10 {
 				int sumNumber = STANDARD_INPUT.nextInt();
 				//もしsumNumberとfirstNumber - secondNumber + thirdNumberが一致した場合
 				if(sumNumber == firstNumber - secondNumber + thirdNumber) {
+					//"正解です。"と表示して改行する
+					System.out.println("正解です。");
 					//飛び出す
 					break;
 				}
@@ -97,6 +103,8 @@ public class Question7_10 {
 				int sumNumber = STANDARD_INPUT.nextInt();
 				//もしsumNumberとfirstNumber - secondNumber - thirdNumberが一致した場合
 				if(sumNumber == firstNumber - secondNumber - thirdNumber) {
+					//"正解です。"と表示して改行する
+					System.out.println("正解です。");
 					//飛び出す
 					break;
 				}
