@@ -66,9 +66,12 @@ public class Question7_14 {
 	 * 作成日           :2026.4.23
 	 */
 	static int setN(int originalNumber, int pos, int consecutiveNumbers) {
+		//変数iが0から始めて1ずつ増やしていき連続して並ぶ回数繰り返す
 		for(int i =0; i < consecutiveNumbers; i++) {
+			// 操作後の値をoriginalNumberに代入する
 			originalNumber = set(originalNumber, pos + i);
 		}
+		// すべての処理が終わった値を返却する
 		return originalNumber;
 	}
 	/**
@@ -80,13 +83,16 @@ public class Question7_14 {
 	 * 作成日           :2026.4.23
 	 */
 	static int resetN(int originalNumber, int pos, int consecutiveNumbers) {
+		//変数iが0から始めて1ずつ増やしていき連続して並ぶ回数繰り返す
 		for(int i =0; i < consecutiveNumbers; i++) {
+			// 操作後の値をoriginalNumberに代入する
 			originalNumber = reset(originalNumber, pos + i);
 		}
+		// すべての処理が終わった値を返却する
 		return originalNumber;
 	}
 	/**
-	 * 関数名           :resetN
+	 * 関数名           :inverseN
 	 * メソッドの説明   :整数のposビット目から指定した個数連続したビットを反転する
 	 * パラメータの説明 :元の整数、開始位置、個数
 	 * 返り値           :操作後の整数
@@ -94,9 +100,12 @@ public class Question7_14 {
 	 * 作成日           :2026.4.23
 	 */
 	static int inverseN(int originalNumber, int pos, int consecutiveNumbers) {
+		//変数iが0から始めて1ずつ増やしていき連続して並ぶ回数繰り返す
 		for(int i =0; i < consecutiveNumbers; i++) {
+			// 操作後の値をoriginalNumberに代入する
 			originalNumber = inverse(originalNumber, pos + i);
 		}
+		// すべての処理が終わった値を返却する
 		return originalNumber;
 	}
 	/**
