@@ -17,9 +17,10 @@ public class Question7_12 {
 	 */
 	static void printBits(int inputNumber) {
 		//変数iが31から始めて1ずつ減らしていきiが0まで繰り返す
-		for(int i = 31; i >= 0; i--)
+		for(int i = 31; i >= 0; i--) {
 			//"iビット目が1なら'1'を0なら'0'"を表示する
 			System.out.print(((inputNumber >>> i & 1) == 1)? '1' : '0');
+		}
 	}
 	/*
 	 * 関数名           :rRotate
@@ -31,9 +32,10 @@ public class Question7_12 {
 	 */
 	public static int rRotate(int originalNumber, int shiftNumber) {
 		//もしshiftNumberが0より小さい場合
-		if(shiftNumber < 0)
+		if(shiftNumber < 0) {
 			//-shiftNumber（逆回転、左）にして返却する
 			return lRotate(originalNumber, -shiftNumber);
+		}
 		//32で割った剰余をshiftNumber代入する
 		shiftNumber %= 32;
 		/*元の整数をshiftNumberビット右シフトして0を詰めた値と、
@@ -51,9 +53,10 @@ public class Question7_12 {
 	 */
 	public static int lRotate(int originalNumber, int shiftNumber) {
 		//もしshiftNumberが0より小さい場合
-		if (shiftNumber < 0) 
+		if (shiftNumber < 0) {
 			//-shiftNumber（逆回転、右）にして返却する
 			return rRotate(originalNumber, -shiftNumber);
+		}
 		//32で割った剰余をshiftNumber代入する
 		shiftNumber %= 32;
 		/*元の整数をshiftNumberビット左シフトして0を詰めた値と、
