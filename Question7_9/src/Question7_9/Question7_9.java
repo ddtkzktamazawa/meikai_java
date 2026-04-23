@@ -9,19 +9,17 @@ import java.util.Scanner;
 public class Question7_9 {
 	/*
 	 * 関数名           :readPlusInt
-	 * メソッドの説明   :入力値が0以下なら再度読み込んで返却する
+	 * メソッドの説明   :整数値を読み込んで、0以下なら再度読み込んで返却する
 	 * パラメータの説明 :なし
-	 * 返り値           :正の整数値
+	 * 返り値           :読み込んだ整数値
 	 * 作成者           :玉澤一輝
-	 * 作成日           :2026.4.22
+	 * 作成日           :2026.4.23
 	 */
 	static int readPlusInt() {
 		//キーボードで入力した値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in);
 		//"正の整数値"を表示する
-		System.out.print("正の整数値：");
-		//inputNumberに入力した値を代入する
-		int inputNumber = standardInput.nextInt();
+		int inputNumber = 0;
 		//入力した値が0以下なら繰り返す
 		while(inputNumber <= 0) {
 			//"正の整数値"を表示する
