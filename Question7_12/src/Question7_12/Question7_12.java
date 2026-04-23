@@ -36,8 +36,6 @@ public class Question7_12 {
 			//-shiftNumber（逆回転、左）にして返却する
 			return lRotate(originalNumber, -shiftNumber);
 		}
-		//32で割った剰余をshiftNumber代入する
-		shiftNumber %= 32;
 		/*元の整数をshiftNumberビット右シフトして0を詰めた値と、
 		 *元の整数を32-shiftNumberビット左シフトして0を詰めた値の論理和を返却する
 		 */
@@ -57,8 +55,6 @@ public class Question7_12 {
 			//-shiftNumber（逆回転、右）にして返却する
 			return rRotate(originalNumber, -shiftNumber);
 		}
-		//32で割った剰余をshiftNumber代入する
-		shiftNumber %= 32;
 		/*元の整数をshiftNumberビット左シフトして0を詰めた値と、
 		 *元の整数を32-shiftNumberビット右シフトして0を詰めた値の論理和を返却する
 		 */
