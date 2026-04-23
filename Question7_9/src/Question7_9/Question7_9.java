@@ -18,7 +18,7 @@ public class Question7_9 {
 	static int readPlusInt() {
 		//キーボードで入力した値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in);
-		//"正の整数値"を表示する
+		//変数inputNumberの初期化
 		int inputNumber = 0;
 		//入力した値が0以下なら繰り返す
 		while(inputNumber <= 0) {
