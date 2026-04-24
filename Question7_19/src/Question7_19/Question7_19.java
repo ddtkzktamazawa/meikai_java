@@ -62,7 +62,7 @@ public class Question7_19 {
 		int indexNumber = standardInput.nextInt();
 		//"削除する個数："を表示する
 		System.out.print("削除する個数：");
-		//変数deleteNumber]に入力した値を代入する
+		//変数deleteNumberに入力した値を代入する
 		int deleteNumber = standardInput.nextInt();
 		//メソッドaryRmvを呼び出し配列のindexNumber番目からdeleteNumber個分の要素を取り除く
 		aryRmvN(arrayNumber, indexNumber, deleteNumber);
