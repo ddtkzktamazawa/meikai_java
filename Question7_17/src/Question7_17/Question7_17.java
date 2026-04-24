@@ -63,6 +63,7 @@ public class Question7_17 {
 		if (resultIndex == -1) {
 			//"その値の要素は存在しません。"を表示する
 			System.out.println("その値の要素は存在しません。");
+			//その他の場合
 		} else {
 			//"それはarrayNumber[resultIndex]にあります。"を表示する
 			System.out.println("それはarrayNumber[" + resultIndex + "]にあります。");
