@@ -64,7 +64,7 @@ public class Question7_19 {
 		System.out.print("削除する個数：");
 		//変数deleteNumberに入力した値を代入する
 		int deleteNumber = standardInput.nextInt();
-		//メソッドaryRmvを呼び出し配列のindexNumber番目からdeleteNumber個分の要素を取り除く
+		//メソッドaryRmvNを呼び出し指定位置から指定個数の要素を削除して前方に詰める
 		aryRmvN(arrayNumber, indexNumber, deleteNumber);
 		//変数iが0から始めて1ずつ増やしていき要素の数繰り返す
 		for (int i = 0; i < elementNumber; i++) {
