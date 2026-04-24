@@ -7,6 +7,8 @@ import java.util.Scanner;
  * 作成日            : 2026.4.24
  */
 public class Question7_20 {
+	private static final int OFFSET = 1;
+	private static final Scanner STANDARD_INPUT = new Scanner(System.in);
 	/**
 	 * 関数名           : aryIns
 	 * メソッドの説明   : 配列の要素[idx]に値を挿入しそれ以降を後ろにずらす
@@ -15,18 +17,28 @@ public class Question7_20 {
 	 * 作成者           : 玉澤一輝
 	 * 作成日           : 2026.4.24
 	 */
-	static void aryIns(int[] arrayNumber, int indexNumber, int insertNumber) {
+	public static void aryIns(int[] arrayNumber, int indexNumber, int insertNumber) {
+		//もし配列数がnullの場合
+		if (arrayNumber == null) {
+			//返却する
+			return;
+		}
 		//もしインデックス0以上、要素数より少ない場合
 		if (indexNumber >= 0 && indexNumber < arrayNumber.length) {
-			//変数iが配列の最後のインデックスから始めて1ずつ減らしていきインデックスまで繰り返す
-			for (int i = arrayNumber.length - 1; i > indexNumber; i--) {
-				//arrayNumber[i-1]をarrayNumber[i]に代入して1つずつ後ろにずれる
-				arrayNumber[i] = arrayNumber[i - 1];
-			}
-			// 指定された位置に値を代入する
-			arrayNumber[indexNumber] = insertNumber;
+			//"挿入エラー：インデックスが範囲外です。"を表示して改行する
+			System.out.println("挿入エラー：インデックスが範囲外です。");
+			//返却する
+			return;
 		}
+		//変数iが配列の最後のインデックスから始めて1ずつ減らしていきインデックスまで繰り返す
+		for (int i = arrayNumber.length - 1; i > indexNumber; i--) {
+			//arrayNumber[i-1]をarrayNumber[i]に代入して1つずつ後ろにずれる
+			arrayNumber[i] = arrayNumber[i - 1];
+		}
+		// 指定された位置に値を代入する
+		arrayNumber[indexNumber] = insertNumber;
 	}
+
 	/**
 	 * 関数名           : main
 	 * メソッドの説明   : 配列の入力を受け取り指定位置への値の挿入を実行して表示する
@@ -42,6 +54,13 @@ public class Question7_20 {
 		System.out.print("要素数：");
 		//変数elementNumberに入力した値を代入する
 		int elementNumber = standardInput.nextInt();
+		//もし要素数が0以下の場合
+		if (elementNumber <= 0) {
+			//プログラムを終了して不正な配列作成をしない
+			System.out.println("エラー：要素数は1以上で指定してください。");
+			//返却する
+			return;
+		}
 		//指定された要素数で配列を作成する
 		int[] arrayNumber = new int[elementNumber];
 		//変数iが0から始めて1ずつ増やしていき要素の数繰り返す
