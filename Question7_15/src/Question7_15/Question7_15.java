@@ -16,6 +16,11 @@ public class Question7_15 {
 	 * 作成日           :2026.4.23
 	 */
 	static int sumOf(int[] arrayName) {
+		//配列数がnullの場合
+		if (arrayName == null) {
+			//0を返却
+			return 0;
+		}
 		//変数sumValueの初期化
 		int sumValue = 0;
 		//変数iが0から始めて1ずつ増やしていき配列の回数繰り返す
@@ -36,11 +41,18 @@ public class Question7_15 {
 	 */
 	public static void main(String[] args) {
 		//キーボードで入力した値を入れる変数を作る
-		Scanner standardInput = new Scanner(System.in);
+		final Scanner STANDARD_INPUT = new Scanner(System.in);
 		//"要素数："を表示する
 		System.out.print("要素数：");
 		//変数elementNumberに入力した値を代入する
-		int elementNumber = standardInput.nextInt();
+		int elementNumber = STANDARD_INPUT.nextInt();
+		//もし要素数が0以下の場合
+		if (elementNumber <= 0) {
+			//プログラムを終了して不正な配列作成をしない
+			System.out.println("エラー：要素数は1以上で指定してください。");
+			//返却する
+			return;
+		}
 		// 指定された要素数で配列を作成する
 		int []arrayNumber = new int[elementNumber];
 		//変数iが0から始めて1ずつ増やしていき要素の数繰り返す
@@ -48,7 +60,7 @@ public class Question7_15 {
 			//"arrayNumber[i]：""を表示する
 			System.out.print("arrayNumber[" + i + "]：");
 			//arrayNumber[i]に入力した値を代入する
-			arrayNumber[i] = standardInput.nextInt();
+			arrayNumber[i] = STANDARD_INPUT.nextInt();
 		}
 		//"全要素の合計はsumOf(arrayNumber)です。"を表示して改行する
 		System.out.println("全要素の合計は" + sumOf(arrayNumber) + "です。");
