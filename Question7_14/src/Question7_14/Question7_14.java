@@ -15,7 +15,7 @@ public class Question7_14 {
 	 * 作成者           :玉澤一輝
 	 * 作成日           :2026.4.23
 	 */
-	static void printBits(int inputNumber) {
+	public static void printBits(int inputNumber) {
 		//変数iが31から始めて1ずつ減らしていきiが0まで繰り返す
 		for(int i = 31; i >= 0; i--)
 			//"iビット目が1なら'1'を0なら'0'"を表示する
@@ -29,7 +29,7 @@ public class Question7_14 {
 	 * 作成者           :玉澤一輝
 	 * 作成日           :2026.4.23
 	 */
-	static int set(int originalNumber, int pos) {
+	public static int set(int originalNumber, int pos) {
 		//整数とposビット目だけが1の論理和をとって指定位置を1にする
 		return originalNumber | (1 << pos);
 	}
@@ -41,7 +41,7 @@ public class Question7_14 {
 	 * 作成者           :玉澤一輝
 	 * 作成日           :2026.4.23
 	 */
-	static int reset(int originalNumber, int pos) {
+	public static int reset(int originalNumber, int pos) {
 		//整数と、1をposビット左シフトして反転させたもの(指定位置だけ0)の論理積をとる
 		return originalNumber & ~(1 << pos);
 	}
@@ -53,7 +53,7 @@ public class Question7_14 {
 	 * 作成者           :玉澤一輝
 	 * 作成日           :2026.4.23
 	 */
-	static int inverse(int originalNumber, int pos) {
+	public static int inverse(int originalNumber, int pos) {
 		// 整数と、posビット目だけが1の排他的論理和をとって指定位置を反転させる
 		return originalNumber ^ (1 << pos);
 	}
@@ -65,7 +65,7 @@ public class Question7_14 {
 	 * 作成者           :玉澤一輝
 	 * 作成日           :2026.4.23
 	 */
-	static int setN(int originalNumber, int pos, int consecutiveNumbers) {
+	public static int setN(int originalNumber, int pos, int consecutiveNumbers) {
 		//変数iが0から始めて1ずつ増やしていき連続して並ぶ回数繰り返す
 		for(int i =0; i < consecutiveNumbers; i++) {
 			// 操作後の値をoriginalNumberに代入する
@@ -82,7 +82,7 @@ public class Question7_14 {
 	 * 作成者           :玉澤一輝
 	 * 作成日           :2026.4.23
 	 */
-	static int resetN(int originalNumber, int pos, int consecutiveNumbers) {
+	public static int resetN(int originalNumber, int pos, int consecutiveNumbers) {
 		//変数iが0から始めて1ずつ増やしていき連続して並ぶ回数繰り返す
 		for(int i =0; i < consecutiveNumbers; i++) {
 			// 操作後の値をoriginalNumberに代入する
@@ -99,7 +99,7 @@ public class Question7_14 {
 	 * 作成者           :玉澤一輝
 	 * 作成日           :2026.4.23
 	 */
-	static int inverseN(int originalNumber, int pos, int consecutiveNumbers) {
+	public static int inverseN(int originalNumber, int pos, int consecutiveNumbers) {
 		//変数iが0から始めて1ずつ増やしていき連続して並ぶ回数繰り返す
 		for(int i =0; i < consecutiveNumbers; i++) {
 			// 操作後の値をoriginalNumberに代入する
