@@ -8,7 +8,9 @@ import java.util.Scanner;
  * 作成日            : 2026.4.24
  */
 public class Question7_17 {
+	//インデックス調整用の定数OFFSET（1）
 	private static final int OFFSET = 1;
+	//インデックス調整用の定数NOT_FOUND（-1）
 	private static final int NOT_FOUND = -1;
 	/**
 	 * 関数名           : linearSearchR

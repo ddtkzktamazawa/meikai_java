@@ -7,6 +7,7 @@ import java.util.Scanner;
  * 作成日            : 2026.4.24
  */
 public class Question7_19 {
+	//キーボードで入力した値を入れる変数を作る（プログラム全体で使用し外部から書き換えられない）
 	private static final Scanner STANDARD_INPUT = new Scanner(System.in);
 	/**
 	 * 関数名           : aryRmvN
