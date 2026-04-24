@@ -16,6 +16,11 @@ public class Question7_16 {
 	 * 作成日           : 2026.4.24
 	 */
 	static int minOf(int[] arrayName) {
+		//もし配列がnullの場合またはarrayName.lengthが0の場合
+		if (arrayName == null || arrayName.length == 0) {
+			//0を返却する
+			return 0;
+		}
 		//変数minimumNunberの初期化
 		int minimumNunber = arrayName[0];
 		//変数iが0から始めて1ずつ増やしていき配列の回数繰り返す
@@ -39,11 +44,18 @@ public class Question7_16 {
 	 */
 	public static void main(String[] args) {
 		//キーボードで入力した値を入れる変数を作る
-		Scanner standardInput = new Scanner(System.in);
+		final Scanner STANDARD_INPUT = new Scanner(System.in);
 		//"要素数："を表示する
 		System.out.print("要素数：");
 		//変数elementNumberに入力した値を代入する
-		int elementNumber = standardInput.nextInt();
+		int elementNumber = STANDARD_INPUT.nextInt();
+		//もし要素数が0未満の場合
+		if (elementNumber <= 0) {
+			//プログラムを終了して不正な配列作成をしない
+			System.out.println("エラー：要素数は1以上で指定してください。");
+			//返却する
+			return;
+		}
 		//指定された要素数で配列を作成する
 		int[] arrayNumber = new int[elementNumber];
 		//変数iが0から始めて1ずつ増やしていき要素の数繰り返す
@@ -51,7 +63,7 @@ public class Question7_16 {
 			//"arrayNumber[i]：""を表示する
 			System.out.print("arrayNumber[" + i + "]：");
 			//arrayNumber[i]に入力した値を代入する
-			arrayNumber[i] = standardInput.nextInt();
+			arrayNumber[i] = STANDARD_INPUT.nextInt();
 		}
 		//"全要素の合計はminOf(arrayNumber)です。"を表示して改行する
 		System.out.println("最小値は" + minOf(arrayNumber) + "です。");
