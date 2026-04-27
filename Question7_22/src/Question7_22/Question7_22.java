@@ -14,7 +14,7 @@ public class Question7_22 {
 	 * 関数名           : arrayClone
 	 * メソッドの説明   : 引数で受け取った配列と同じ内容の新しい配列を生成して返却する
 	 * パラメータの説明 : コピー元の配列
-	 * 返り値           : 生成したコピー配列（aがnullの場合はnullを返す）
+	 * 返り値           : 生成したコピー配列（arrayNumberがnullの場合はnullを返す）
 	 * 作成者           : 玉澤一輝
 	 * 作成日           : 2026.4.24
 	 */
@@ -34,6 +34,15 @@ public class Question7_22 {
 		//cloneArrayを返却する
 		return cloneArray;
 	}
+	/**
+	 * 関数名           : main
+	 * メソッドの説明   : 要素数と各要素の値を入力しarrayCloneメソッドを呼び出して
+	 * 					　複製された配列の内容を表示する
+	 * パラメータの説明 : なし
+	 * 返り値           : なし
+	 * 作成者           : 玉澤一輝
+	 * 作成日           : 2026.4.27
+	 */
 	public static void main(String[] args) {
 		//"要素数："を表示する
 		System.out.print("要素数：");
