@@ -23,18 +23,19 @@ public class Question7_24 {
 	 */
 	public static int[] arrayRmvOf(final int[] arrayNumber1, final int idxNumber) {
 		//もし各配列数がnullの場合
-		if (arrayNumber1 == null)
+		if (arrayNumber1 == null) {
 			//返却する
 			return null;
-
+		}
 		//もしidxNumberが0より小さい、またはidxNumberがarrayNumber1以上の場合
 		if (idxNumber < 0 || idxNumber >= arrayNumber1.length) {
 			//指定された要素数で配列を作成する
 			int[] cloneArray = new int[arrayNumber1.length];
 			//変数iが0から始めて1ずつ増やしていき要素の数繰り返す
-			for (int i = 0; i < arrayNumber1.length; i++) 
+			for (int i = 0; i < arrayNumber1.length; i++) {
 				//cloneArray[i]にarrayNumber1[i]を代入する
 				cloneArray[i] = arrayNumber1[i];
+			}
 			//cloneArrayを返却する
 			return cloneArray;
 		}
@@ -46,9 +47,10 @@ public class Question7_24 {
 		//変数iが0から始めて1ずつ増やしていき要素の数繰り返す
 		for (int i = 0; i < arrayNumber1.length; i++) {
 			//もしiとidxNumberが一致する場合
-			if (i == idxNumber)
+			if (i == idxNumber) {
 				//スキップする
 				continue;
+			}
 			//result[certainValue++]にarrayNumber1[i]を代入する
 			resultValue[certainValue++] = arrayNumber1[i];
 		}
